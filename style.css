@@ -1,0 +1,86 @@
+/*.container {
+    display: flex;
+  }
+  
+  
+  .grid {
+    width: 200px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: yellow;
+  }
+  
+  .grid div {
+    height: 20px;
+    width: 20px;
+  }
+  
+  .tetromino {
+    background-color: blue;
+  }
+  
+  
+  .mini-grid {
+    margin-left: 50px;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: yellow;
+  }
+  
+  .mini-grid div {
+    height: 20px;
+    width: 20px;
+  }
+  */
+
+
+
+ /* Set the background color of the entire page to black */
+body {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  color: white; /* Set text color to white for better contrast */
+}
+
+/* Style the grid cells with green */
+.container .grid div, .container .mini-grid div {
+  width: 30px;
+  height: 30px;
+  background-color: green;
+  border: 1px solid #333; /* Add a border for better visibility */
+}
+
+/* Style the "taken" cells with a darker green */
+.container .grid .taken {
+  background-color: darkgreen;
+}
+
+/* Style the score display */
+h3 {
+  color: white;
+}
+
+/* Style the start/pause button */
+#start-button {
+  background-color: green;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* Center the score and button */
+h3, #start-button {
+  text-align: center;
+}
+
+/* Style the score number */
+#score {
+  font-size: 24px;
+  font-weight: bold;
+}
